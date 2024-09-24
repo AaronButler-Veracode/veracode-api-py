@@ -1,13 +1,13 @@
-# default pipeline build, client should already have existing pipeline. ​
+# Basic pipeline to trigger a Veracode scan
 
-trigger:​
-  branches:​
-    include:​
-    - '*' ​
+trigger:
+  branches:
+    include:
+    - '*' 
 
-pool:​
-  vmImage: ubuntu-latest​
+pool:
+  vmImage: ubuntu-latest
 
-steps:​
-- script: echo Veracode Internal Basic Pipeline​ trigger
-  displayName: 'Veracode Internal Basic Pipeline trigger'
+steps:
+- script: echo Veracode trigger
+  displayName: 'Veracode Pipeline Trigger'
